@@ -25,6 +25,6 @@ def ceaser(string, shifter)
        stringArr[i] = stringArr[i].chr
         i += 1;
     end   
-    stringArr.join;   
+    stringArr.join;
 end
     
