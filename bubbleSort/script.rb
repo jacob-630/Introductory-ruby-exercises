@@ -1,7 +1,9 @@
-testArr = [2, 1]
+testArr = [2, 1, 4, 6, 1, 3, 4, 1]
 def bubbleSort(arr)
-    i = 0;
+    
     loop do
+        i = 0;
+        errors = 0;
         while i < arr.length() - 1
             if arr[i] > arr[i + 1]
                 temp = arr[i]
@@ -12,7 +14,12 @@ def bubbleSort(arr)
             end
             i+=1
         end 
-    while errors != 0;
+        if errors == 0
+            break
+        end
+    end
+
+        
     arr
 end
 
